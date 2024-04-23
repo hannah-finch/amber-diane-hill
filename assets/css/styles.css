@@ -7,6 +7,7 @@
   --gray: #d1d1d1;
 }
 
+/* General styles ------------- */
 body {
   font-size: 18px;
   line-height: 1.8;
@@ -15,8 +16,43 @@ body {
   background-color: var(--light);
 }
 
+section {
+  padding: 40px 10%;
+}
+
+.shadow-01 {
+  box-shadow: 0 0 6px #7272722c;
+}
+
+.shadow-02 {
+  box-shadow: 0 0 15px #3b3f4339;
+}
+
+.button-orange, .button-transparent {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  padding: 6px 16px;
+  margin-right: 10px;
+  transition: background-color .15s;
+}
+
+.button-orange {
+  background-color: var(--orange);
+  color: var(--light);
+}
+
+.button-orange:hover {
+  background-color: var(--teal);
+}
+
+.button-transparent:hover {
+  background-color: var(--blue);
+}
+
+/* Text styles ------------------ */
 p {
-  margin: 2% 0;
+  margin: 20px 0;
 }
 
 h1, h2 {
@@ -41,11 +77,6 @@ h3 {
   letter-spacing: 2px;
 }
 
-footer h3{
-  color: var(--orange);
-  display: inline;
-}
-
 h4 {
   font-size: 14px;
   text-transform: uppercase;
@@ -54,43 +85,7 @@ h4 {
   line-height: 1.4;
 }
 
-nav {
-  height: 80px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-nav ul {
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-nav li {
-  float: left;
-  margin: 10px 30px;
-  padding: 2px 6px;
-}
-
-nav li:hover {
-  background-color: var(--blue);
-}
-
-.stars-text {
-  font-size: 12px;
-}
-
-.button-orange {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.button-transparent {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
+/* Header styles ----------------------- */
 header {
   background-image: url(../images/ocean.png);
   background-size: cover;
@@ -117,14 +112,65 @@ header {
   margin: 20px 0px;
 }
 
-.shadow-01 {
-  box-shadow: 0 0 6px #7272722c;
+/* Navbar styles ------------------- */
+nav {
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.shadow-02 {
-  box-shadow: 0 0 15px #3b3f4339;
+nav ul {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-section {
-  padding: 40px 10%;
+nav li {
+  float: left;
+  margin: 10px 30px;
+  padding: 2px 6px;
+  transition: background-color .15s;
+}
+
+nav li:hover {
+  background-color: var(--blue);
+}
+
+/* Section 1 styles -------------- */
+.section-01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-img {
+  width: 35%;
+}
+
+.section-01 .content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  width: 100px;
+}
+
+.stars-text {
+  font-size: 16px;
+  display: inline;
+}
+
+.paragraph-group {
+  margin: 24px 0;
+}
+
+/* Footer styles ---------------- */
+footer h3{
+  color: var(--orange);
+  display: inline;
 }
