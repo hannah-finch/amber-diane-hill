@@ -3,7 +3,8 @@
   --dark: #0c0c0c;
   --teal: #285b5b;
   --blue: #d3e9f0;
-  --orange: #ba5a31
+  --orange: #ba5a31;
+  --gray: #d1d1d1;
 }
 
 body {
@@ -46,17 +47,34 @@ footer h3{
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
-ul {
+nav {
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+nav ul {
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+}
+
+nav li {
+  float: left;
+  margin: 10px 30px;
+  padding: 2px 6px;
+}
+
+nav li:hover {
+  background-color: var(--blue);
 }
 
 .stars-text {
@@ -77,7 +95,7 @@ header {
   background-image: url(../images/ocean.png);
   background-size: cover;
   background-position: 50% 70%;
-  height: 22em;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,21 +107,22 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  border-radius: 3px;
 }
 
 .line-horizontal {
-  background-color: #d1d1d1;
+  background-color: var(--gray);
   height: 2px;
   width: 80%;
   margin: 20px 0px;
 }
 
 .shadow-01 {
-  box-shadow: 0 0 5px #565656;
+  box-shadow: 0 0 6px #7272722c;
 }
 
 .shadow-02 {
-  box-shadow: 0 0 15px #4b4f547f;
+  box-shadow: 0 0 15px #3b3f4339;
 }
 
 section {
