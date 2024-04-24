@@ -61,9 +61,9 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   text-align: center;
   line-height: 1.4;
 }
@@ -80,9 +80,9 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-align: center;
   line-height: 1.4;
 }
