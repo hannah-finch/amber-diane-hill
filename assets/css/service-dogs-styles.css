@@ -187,6 +187,16 @@ nav .link:hover {
   border: 16px solid var(--blue);
 }
 
+/* Why I wrote this book section */
+
+.why-section img {
+  width: 40%;
+  float: right;
+  border: 10px solid var(--light);
+  margin: 0 0 2% 5%;
+}
+
+
 /* Footer styles ---------------- */
 footer {
   background-color: var(--teal);
