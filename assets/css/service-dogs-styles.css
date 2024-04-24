@@ -176,8 +176,16 @@ nav .link:hover {
   margin-bottom: 24px;
 }
 
+/* Look inside section styles */
+.slideshow-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--blue);
 
-
+}
+.slideshow {
+  border: 16px solid var(--blue);
+}
 
 /* Footer styles ---------------- */
 footer {
