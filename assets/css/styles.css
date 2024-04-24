@@ -71,6 +71,7 @@ h1 {
 h2 {
   font-size: 26px;
   letter-spacing: 4px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -156,10 +157,13 @@ nav li:hover {
   justify-content: space-between;
 }
 
+.content-01 h2 {
+ margin: 0;
+}
+
 .stars-group {
   display: flex;
   align-items: center;
-  margin-top: -20px;
 }
 .stars {
   width: 100px;
@@ -168,6 +172,7 @@ nav li:hover {
 
 .stars-text {
   font-size: 16px;
+  margin: 0;
 }
 
 .paragraph-group {
@@ -185,10 +190,6 @@ nav li:hover {
   display: flex;
 }
 
-.section-02 h2 {
-  margin-bottom: 30px;
-}
-
 .line-vertical {
   background-color: var(--gray);
   width: 2px;
@@ -197,6 +198,53 @@ nav li:hover {
 
 .events-paragraph-group {
   flex: 0 0 calc(50% - 42px);
+}
+
+/* More from Amber section --------- */
+.section-03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 309px 122px 122px;
+}
+
+.item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 6px solid white;
+  box-shadow: 0 0 6px #7272722c;
+  transition: border .2s;
+}
+
+.item:hover {
+  border: 6px solid var(--blue);
+}
+
+.item-01 {
+  grid-row: span 2;
+  background-image: url(../images/more-01.png);
+}
+
+.item-02 {
+  background-image: url(../images/more-02.png);
+}
+
+.item-03 {
+  background-image: url(../images/more-03.png);
+}
+
+.item-04 {
+  background-image: url(../images/more-04.png);
+}
+
+.item-05 {
+  background-image: url(../images/more-05.png);
 }
 
 /* Footer styles ---------------- */
