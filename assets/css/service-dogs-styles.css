@@ -1,0 +1,104 @@
+:root {
+  --light: #fefffa;
+  --dark: #0c0c0c;
+  --teal: #285b5b;
+  --blue: #d3e9f0;
+  --orange: #ba5a31;
+  --gray: #d1d1d1;
+}
+
+/* General styles ------------- */
+body {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: 'Jost', Arial, sans-serif;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+section {
+  padding: 80px 10%;
+  box-shadow: 0 2px 2px #d2d2d22c;
+}
+
+.shadow-01 {
+  box-shadow: 0 0 6px #7272722c;
+}
+
+.shadow-02 {
+  box-shadow: 0 0 15px #3b3f4339;
+}
+
+.button-orange, .button-transparent {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  padding: 6px 16px;
+  margin-right: 10px;
+  transition: background-color .15s;
+}
+
+.button-orange {
+  background-color: var(--orange);
+  color: var(--light);
+}
+
+.button-orange:hover {
+  background-color: var(--teal);
+}
+
+.button-transparent:hover {
+  background-color: var(--blue);
+}
+
+/* Text styles ------------------ */
+p {
+  margin: 20px 0;
+}
+
+h1, h2 {
+  font-family: 'Aleo', serif;
+}
+
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 26px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Footer styles ---------------- */
+footer {
+  background-color: var(--teal);
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 10%;
+}
+
+footer h3{
+  color: var(--orange);
+  font-weight: bold;
+  display: inline;
+}
