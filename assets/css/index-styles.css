@@ -118,58 +118,16 @@ nav li {
   background-color: var(--green);
 }
 
-/* Media queries for responsiveness */
+/* Media queries for responsiveness -------------------------------------------*/
 @media screen and (min-width: 1400px) {
-  section {
-    padding: 80px 20%;
-  }
- /* More from Amber section styles --- */
+  /* More from Amber section styles --- */
   .image-grid {
     grid-template-rows: 200px 200px;
     grid-template-columns: 410px 163px 163px;
     }
 }
 
-@media screen and (max-width: 990px) { 
-  .button-transparent {
-    order: -2;
-    margin: -30px 80% 20px -16px;
-  }
-}
-
 @media screen and (max-width: 800px) {
-  p {
-    text-align: center;
-  }
-
-  /* section 1 styles ----- */
-  .section-01 {
-    flex-direction: column;
-  }
-
-  .content-01 {
-    width: 100%;
-  }
-
-  .button-container {
-    justify-content: center;
-  }
-
-  .button-transparent {
-    order: 0;
-    margin: 0;
-  }
-
-  .book-img {
-    margin: 0 0 20px 0;
-  }
-
-  .heading-stars {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   /* Author events section styles ------- */
   .content-02 {
     flex-direction: column;
@@ -178,33 +136,29 @@ nav li {
   .content-02 h3 {
     text-align: center;
   }
+
+  .line-vertical {
+    background-color: var(--gray);
+    height: 2px;
+    width: 80%;
+    margin: 30px auto;
+  }
 }
 
+/* Media queries for 3rd largest screens ---------------------------------- */
 @media screen and (max-width: 670px) {
-  body {
-    font-size: 16px;
-  }
-
-  section, footer {
-    padding: 40px 10%;
-  }
-
-  /* Header styles------ */
-  header {
-    height: 400px;
-  }
-
   h1 {
     font-size: 20px;
     letter-spacing: 4px;
   }
 
-  h2 {
-    text-align: center;
-  }
-
   h4 {
     font-size: 12px;
+  }
+  
+  /* Header styles------ */
+  header {
+    height: 400px;
   }
 
   .line-horizontal {
@@ -228,11 +182,6 @@ nav li {
     margin: 5px;
   }
 
-  /* Section 1 styles---- */
-  .button-transparent {
-    order: -2;
-    margin: -30px 40% 20px 40%;
-  }
 
   /* More from Amber section styles ---*/
   .image-grid {
@@ -246,11 +195,8 @@ nav li {
   }
 }
 
+/* Media queries for SMALLEST screens ---------------------------------- */
 @media screen and (max-width: 375px) {
-  body {
-    font-size: 14px;
-  }
-  
   /* Header styles-------- */
   header {
     height: 300px;
@@ -260,24 +206,6 @@ nav li {
   .book-img {
     width: 100%;
     min-width: auto;
-  }
-
-  .stars-text {
-    display: none;
-  }
-  
-  .button-container {
-    flex-direction: column;
-  }
-
-  .button-orange {
-    margin: 5px 15%;
-    text-align: center;
-  }
-
-  .button-transparent {
-    margin: -20px 5px 20px;
-    text-align: center;
   }
 
   /* More from Amber section styles ---- */

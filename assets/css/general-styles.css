@@ -42,6 +42,7 @@ section {
 .button-orange {
   background-color: var(--orange);
   color: var(--light);
+  margin-bottom: 20px;
 }
 
 .button-orange:hover {
@@ -145,10 +146,15 @@ nav .link:hover {
  margin: 0;
 }
 
+.heading-stars {
+  margin-bottom: 16px;
+}
+
 .stars-group {
   display: flex;
   align-items: center;
 }
+
 .stars {
   width: 100px;
   margin-right: 10px;
@@ -165,6 +171,7 @@ nav .link:hover {
 
 .button-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -178,8 +185,106 @@ footer {
   padding: 80px 10%;
 }
 
-footer h3{
+footer h2 {
+  text-align: center;
+  font-size: 22px;
+  padding: 0 20px;
+}
+
+footer h3 {
   color: var(--orange);
   font-weight: bold;
   display: inline;
+}
+
+
+
+/* Media queries for LARGEST SCREENS ---------------------------------- */
+@media screen and (min-width: 1400px) {
+  section {
+    padding: 80px 20%;
+  }
+}
+
+/* Media queries for 2nd largest screens ---------------------------------- */
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 50px 10%;
+  }
+
+  /* section 1 styles ----- */
+  .section-01 {
+    flex-direction: column;
+    align-items: center;
+    /* width: 90%; */
+  }
+
+  .content-01 {
+    width: 100%;
+    align-content: center;
+  }
+
+  .book-img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 0 20px 0;
+    align-self: center;
+  }
+
+
+}
+
+/* Media queries for 3rd largest screens ---------------------------------- */
+@media screen and (max-width: 670px) {
+  body {
+    font-size: 16px;
+  }
+
+  section, footer {
+    padding: 40px 10%;
+  }
+}
+
+/* Media queries for 4th largest screens ---------------------------------- */
+@media screen and (max-width: 420px) {
+
+}
+
+/* Media queries for SMALLEST screens ---------------------------------- */
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .stars-text {
+    display: none;
+  }
+
+  .stars {
+    margin: auto;
+  }
+    
+  .button-container {
+    flex-direction: column;
+  }
+  
+  .button-orange, .button-transparent {
+    display: block;
+    width: 80%;
+    margin: 5px;
+    text-align: center;
+  }
+  
 }
