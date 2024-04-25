@@ -2,7 +2,7 @@
   --light: #fefffa;
   --dark: #0c0c0c;
   --teal: #285b5b;
-  --blue: #d3e9f0;
+  --blue: #dde9e2;
   --orange: #ba5a31;
   --gray: #d1d1d1;
 }
@@ -408,7 +408,7 @@ footer h3{
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
   body {
     font-size: 14px;
   }
