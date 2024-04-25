@@ -35,6 +35,7 @@ section {
   font-size: 14px;
   padding: 6px 16px;
   margin-right: 10px;
+  flex-shrink: 0;
   transition: background-color .15s;
 }
 
@@ -92,7 +93,7 @@ header {
   background-image: url(../images/ocean.png);
   background-size: cover;
   background-position: 50% 70%;
-  height: 600px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,10 +127,11 @@ nav ul {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav li {
-  float: left;
   margin: 10px 30px;
   padding: 2px 6px;
   transition: background-color .15s;
@@ -148,6 +150,8 @@ nav li:hover {
 
 .book-img {
   width: 35%;
+  min-width: 300px;
+  margin-right: 20px;
 }
 
 .content-01 {
@@ -177,6 +181,11 @@ nav li:hover {
 
 .paragraph-group {
   margin-bottom: 24px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Author events section --------- */
@@ -269,4 +278,173 @@ footer h3{
   color: var(--orange);
   font-weight: bold;
   display: inline;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 1400px) {
+  section {
+    padding: 80px 20%;
+  }
+ /* More from Amber section styles --- */
+  .image-grid {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 410px 163px 163px;
+    }
+}
+
+@media screen and (max-width: 990px) { 
+  .button-transparent {
+    order: -2;
+    margin: -30px 80% 20px -16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    text-align: center;
+  }
+
+  /* section 1 styles ----- */
+  .section-01 {
+    flex-direction: column;
+  }
+
+  .content-01 {
+    width: 100%;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .button-transparent {
+    order: 0;
+    margin: 0;
+  }
+
+  .book-img {
+    margin: 0 0 20px 0;
+  }
+
+  .heading-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Author events section styles ------- */
+  .content-02 {
+    flex-direction: column;
+  }
+
+  .content-02 h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  body {
+    font-size: 16px;
+  }
+
+  section, footer {
+    padding: 40px 10%;
+  }
+
+  /* Header styles------ */
+  header {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .line-horizontal {
+    margin: 10px 0;
+  }
+
+  .title-box {
+    padding: 30px;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px;
+  }
+
+  /* Section 1 styles---- */
+  .button-transparent {
+    order: -2;
+    margin: -30px 40% 20px 40%;
+  }
+
+  /* More from Amber section styles ---*/
+  .image-grid {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 309px 184px 184px;   
+  }
+
+  .item-01 {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /* Header styles-------- */
+  header {
+    height: 300px;
+  }
+
+  /* Section 1 styles ------ */
+  .book-img {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .stars-text {
+    display: none;
+  }
+  
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-orange {
+    margin: 5px 15%;
+    text-align: center;
+  }
+
+  .button-transparent {
+    margin: -20px 5px 20px;
+    text-align: center;
+  }
+
+  /* More from Amber section styles ---- */
+  .image-grid {
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 249px 146px 146px;
+  }
 }
